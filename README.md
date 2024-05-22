@@ -54,7 +54,7 @@ In this repo, you will find the following csv files:
 | File     | Description                                                                                                                                               |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | test.csv | a smaller file that has a few sample transactions - the intent is to use this file for development. like most development resources, this file is "clean" |
-| data.csv | a larger that has a number of transactions - like the real world, you should not assume that this file is not without its "issues"                        |
+| data.csv | a larger file that has a number of transactions - like the real world, you should not assume that this file is not without its "issues"                   |
 
 ## Submission
 
