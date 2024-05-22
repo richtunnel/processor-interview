@@ -39,7 +39,7 @@ Your solutions needs to provide a system with the following functionality:
 
 - **UI**
   - Accepts a file containing the transactions to process
-    - Each file submitted should continue "in continuation of" previous runs
+    - Each file submitted should continue "in continuation of" previous submissions
   - An ability to "reset the system to 0"
 - **Logic** that correctly processes the file
 - **Reporting**
