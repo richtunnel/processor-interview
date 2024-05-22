@@ -4,7 +4,7 @@
 
 Thank you for taking a the time to complete our interview code project. We realize that there are many ways to conduct the "technical part" of the interview process from L33T code tests to whiteboards, and each has its own respective pros / cons. We intentionally chose the take-home project approach because we believe it gives you the best chance to demonstrate your skills and knowledge in a "normal environment" - i.e. your computer, keyboard, and IDE.
 
-Our expectation is that this project should take between 2-4 hours of effort. We realize that you have a life outside of this interview process so we do not specify a timeframe in which you need to complete the project. That said, we are generally actively recruiting, so a long delay may result in the opening having already been filled.
+Our expectation is that this project should take between 3-5 hours of effort. We realize that you have a life outside of this interview process so we do not specify a timeframe in which you need to complete the project. That said, we are generally actively recruiting, so a long delay may result in the opening having already been filled.
 
 You are free to use whatever tech stack you prefer to complete the project. Once your project is complete, the next step in the process is a conversation about why you made the choices you did and a review of your solution. We believe that this conversation is as important as the code itself and provides an opportunity for feedback both ways.
 
@@ -39,13 +39,18 @@ Your solutions needs to provide a system with the following functionality:
 
 - **UI**
   - Accepts a file containing the transactions to process
-    - Each file submitted should continue "on top of" previous runs
+    - Each file submitted should continue "in continuation of" previous runs
   - An ability to "reset the system to 0"
-- **Logic** that processes the file
+- **Logic** that correctly processes the file
 - **Reporting**
   - A chart of accounts that list the account name, its cards, and the amount on each card
   - A list of accounts that we need to give to collections (any cards with a < 0.00 balance)
   - A list of "bad transactions" that someone needs to go look at (any transactions that you were unable to parse)
+- **Persistence**
+  - Persistence during a "run" of the software is required
+    - for example, if you choose to build remix site, we expect that you, at minimum, use an in memory cache that maintains state as long as the process is running
+    - Long term persistence such as a database is allowed, but not required.
+      - If implemented, be sure that initialization is easy / documented for our review
 
 ### Data Files
 
