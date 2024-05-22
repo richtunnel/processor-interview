@@ -8,19 +8,19 @@ Our expectation is that this project should take between 2-4 hours of effort. We
 
 You are free to use whatever tech stack you prefer to complete the project. Once your project is complete, the next step in the process is a conversation about why you made the choices you did and a review of your solution. We believe that this conversation is as important as the code itself and provides an opportunity for feedback both ways.
 
-We encourage to have fun with the project, while producing a solution that you believe accurately represents how you would bring your skillset to the team.
+We encourage you to have fun with the project, while producing a solution that you believe accurately represents how you would bring your skillset to the team.
 
 We have attempted to make this repo as clear as possible, but if you have any questions, we encourage you to reach out.
 
 ## Project
 
-We would like you to build a transaction processor. In this scenario, you should consider your user an internal account manager, who has been provided a transaction file from one or more of our transaction providers.
+We would like you to build a transaction processor. In this scenario, the user of your software is an internal account manager, who has been provided a transaction file from one or more of our transaction providers.
 
-We will provide your system with a list of transactions. It needs to process the transactions and provide some reporting information back to the user. We will detail the content of the file and required reporting below.
+We will provide your software with a list of transactions. It needs to process the transactions and provide some reporting information back to the user. We will detail the content of the file and required reporting below.
 
 Beyond these basic requirements, the implementation is up to you.
 
-### Transaction
+### Transaction Details
 
 These transactions will contain the following information:
 
@@ -33,7 +33,7 @@ These transactions will contain the following information:
 | Description        | Text   | A brief description of the transaction                            |
 | Target Card Number | Number | only provided if the transaction type is a transfer               |
 
-### Requirements
+### Functional Requirements
 
 Your solutions needs to provide a system with the following functionality:
 
@@ -60,7 +60,19 @@ In this repo, you will find the following csv files:
 
 You should fork this repo to your own account and then submit a PR when you are ready for your solution to be evaluated. This workflow closely follows our daily practice of feature branching > PR and following it is required for your submission to be considered "complete".
 
-## Final Thoughts
+## Final Thoughts and Hints
 
 - In this scenario, you are the initial architect creating the first pass at this project. You can consider our review the same as a Senior level engineer coming on to the project. Make sure that when we "pick up" the repo, it is clear how to stand up the project, run the solution, and potentially contribute code
-- This scenario is obviously simplified from reality, that said you should consider future requests like other transaction types, different file formats, etc. - hint - this will at minimum, be a topic in the conversation.
+- Since you are tackling this specific project, our expectation is that you are at a senior engineer level. While we 100% want your code to represent your preferred style, there are some things we consider "basic" that should be in your submission. These include ideas like the following list. This list is not exhaustive, it is meant to point in a direction:
+  - Clear, consistent, readable code
+  - Proper use of your selected stack
+    - for example, if you choose C#, we would expect to see IOC/DI appropriately implemented
+  - DRY
+  - Low cyclomatic complexity
+  - Low Coupling / High Cohesion
+  - Clear thought and patterns for maintainability and expansion
+    - This scenario is obviously simplified from reality, that said you should consider future requests like other transaction types, different file formats, etc. - this will at minimum, be a topic in the conversation
+- While it should be obvious, this scenario involves "money". This means numerical accuracy is required and at least minimal security should be considered in your submission (we aren't going to "hack your solution", but there shouldn't be open API endpoints either).
+- We do NOT expect you to be a designer, we do expect you to consider your user and make the experience intuitive and easy to use
+
+As we said above, if you have any questions, please reach out.
