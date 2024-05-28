@@ -40,7 +40,7 @@ Your solutions needs to provide a system with the following functionality:
 - **UI**
   - Accepts a file containing the transactions to process
     - Each file submitted should continue "in continuation of" previous submissions
-  - An ability to "reset the system to 0"
+  - An ability to reset the system to blank (new)
 - **Logic** that correctly processes the file
 - **Reporting**
   - A chart of accounts that list the account name, its cards, and the amount on each card
@@ -48,7 +48,7 @@ Your solutions needs to provide a system with the following functionality:
   - A list of "bad transactions" that someone needs to go look at (any transactions that you were unable to parse)
 - **Persistence**
   - Persistence during a "run" of the software is required
-    - for example, if you choose to build remix site, we expect that you, at minimum, use an in memory cache that maintains state as long as the process is running
+    - for example, if you choose to build a nextjs or remix site, we expect that you, at minimum, use an in memory cache that maintains state as long as the process is running
     - Long term persistence such as a database is allowed, but not required.
       - If implemented, be sure that initialization is easy / documented for our review
 
